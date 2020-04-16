@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Каталог", 
+		"/catalog/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Скидки", 
+		"/catalog-skidok/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Бесплатная доставка", 
+		"/delivery/", 
+		Array(), 
+		Array("ico"=>"temp"), 
+		"" 
+	),
+	Array(
+		"Оптовые продажи", 
+		"https://crazy-fish.biz/blog/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/company/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

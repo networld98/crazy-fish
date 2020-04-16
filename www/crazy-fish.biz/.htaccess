@@ -1,0 +1,204 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag allow_call_time_pass_reference 1
+  php_flag session.use_trans_sid off
+
+  #php_value display_errors 1
+php_value memory_limit 1024M
+  php_value mbstring.func_overload 2
+  php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+    RewriteCond %{HTTP_HOST} ru.crazy-fish.biz
+RewriteRule (.*) https://crazy-fish.biz/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} !^/personal*
+RewriteCond %{REQUEST_URI} !\/$
+RewriteRule ^(.*[^\/])$ /$1/ [R=301,L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/bitrix/admin/1cv7_exchange\.php$ [NC]
+RewriteCond %{REQUEST_URI} !^/bitrix/tmp [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L,QSA]
+
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^(/bitrix/admin/1cv7_exchange\.php)$ http://%{HTTP_HOST}/$1 [R=301,L,QSA]
+RewriteCond %{HTTP_HOST} ^www.crazy-fish\.biz$ [NC]
+RewriteRule ^(.*)$ https://crazy-fish.biz/$1 [R=301,L]
+Redirect 301 /catalog/russia/ https://crazy-fish.biz/catalog/
+Redirect 301 /company/contacts/ https://crazy-fish.biz/contact-us/
+Redirect 301 /company/licenses/ https://crazy-fish.biz/about/
+Redirect 301 /company/licenses/ https://crazy-fish.biz/about/
+Redirect 301 /catalog/compare.php/ https://crazy-fish.biz/
+Redirect 301 /catalog/nabory/universalnyj_komplekt_primanok_dlja_lovli_okunja__schuki_i_sudaka_4/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cilikon_crazy_fish/tough_4_silikonovye_primanki_crazy_fish/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nano_minnow_640266/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cruel_leech_5.1_42130736/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nano_minnow_28_537055r7/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/powertail_4772/ https://crazy-fish.biz/catalog/
+Redirect 301 /upload/iblock/cf7/cf79d947b0827b402d62ca3f02bca8ca.jpg/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/spinningi_crazy_fish/spinning_arion/spinning_arion_asr6112ssul/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/polaris_54595/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/scalp_minnow_78062_ryba/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/spinningi_crazy_fish/spinning_arion_asr6112ssul/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cilikon_crazy_fish/slim_shaddy_silikonovye_primanki_crazy_fish/slim_shaddy_32__5680737/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/dainty_33__2585326/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/scalp_minnow_78112/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_16_5140427f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/spinningi_crazy_fish/spinning_ebisu/spinning_ebisu_gold/spinning_ebisu_gold_sg602sul_nano_jig/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nimble_5_451254d6/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/krjuchki_crazy_fish/ofsetnye_krjuchki_crazy_fish/ofsetnyj_krjuchok_offset_joint_hook/ofsetnyj_krjuchok_dn_offset_joint_hook_ojh10_10/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nimble_16_4940126/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/scalp_minnow_7811/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/vibro_worm_350115/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/blesny_crazy_fish/kolebljuschajasja_blesna_swirl/spinning_splinter_asr6112sul__17g_210cm_69_26lb_70g_/?arsort=active_from&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_1_5227897/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kepki_futbolki_reglany/veduta_chehly_na_telefony/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kepki_futbolkm/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/polaris_54561/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cilikon_crazy_fish/active_slug_silikonovye_primanki_crazy_fish/active_slug_27.125_zh.chesnok/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/polaris_54564/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_1_5227m57fs/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/odinarnyj_krjuchok_crazy_fish_round_bent_joint_hook_4_6_sht/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cilikon_crazy_fish/cruel_leech_silikonovye_primanki_crazy_fish/cruel_leech__855101/?arsort=rating&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kepki_futbolki_reglany/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cruel_leech_4_4110096/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/katushki_okuma/katushka_okuma_ceymar_xt_cxt40fd/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/blesny_crazy_fish/kolebljuschajasja_blesna_sense/kolebljuschajasja_blesna_sense6g/kolebljuschajasja_blesna_sense69.1/?arsort=active_from&arorder=desc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/katushki_okuma/katushka_okuma_epixor_xt_epxt30/?arsort=active_from&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_dark_green/?arsort=active_from&arorder=desc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kepki_futbolki_reglany/dzhersi_veduta/dzhersi_perch_master/dzhersi_perch_master__s/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/polaris_54553/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_22_3555426/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_dark_green/?arsort=active_from&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_16_51409d7/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_22_3555666f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nano_minnow_640816/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nano_minnow_5_55120127f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nano_minnow_28_5370737/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_35_36904d6f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_22_355517d6f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cruel_leech_5.1_42130146/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/powertail_47105/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/scalp_minnow_78113/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/scalp_minnow_78113/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/baff_veduta_zander_hunter/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_22_355559rh6f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/polaris_54584/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_1_52279d7/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_22_3555m146/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cilikon_crazy_fish/tough__silikonovye_primanki_crazy_fish/tough_5_silikonovye_primanki_crazy_fish/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/nimble_4_431009d6v/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/polaris_2_1754186/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/?PAGEN_1=4/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/glider_22_355596/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_dark_green/?arsort=rating&arorder=desc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/spinningi_crazy_fish/spinning_arion/spinning_arion_asr6112ssul__0.64g_/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_16_5140517f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnuryfljuorokarbon/katushka_okuma_epixor_xt_epxt20/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_16_514018d7/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/ojh4_10sht_ofsetnyj_krjuchok_offset_joint_hook/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/cilikon_crazy_fish/nimble_silikonovye_primanki_crazy_fish/nimble1.6_silikonovye_primanki_crazy_fish/nimble_16_4940146/?arsort=thumbs&arorder=asc/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/kasari_16_5140517f/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/spinningi_crazy_fish/spinning_ebisu/spinning_ebisu_gold/?num=18&view=list/ https://crazy-fish.biz/catalog/
+Redirect 301 /catalog/katushki_pletenye_shnury/ https://crazy-fish.biz/catalog/katushki/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_daiwa/ https://crazy-fish.biz/catalog/katushki/katushki_daiwa/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/katushka_okuma_ceymar_xt_cxt25fd/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/katushka_okuma_ceymar_xt_cxt25fd/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/katushka_okuma_ceymar_xt_cxt30fd/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/katushka_okuma_ceymar_xt_cxt30fd/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/katushka_okuma_ceymar_xt_cxt35fd/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/katushka_okuma_ceymar_xt_cxt35fd/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/katushka_okuma_ceymar_xt_cxt40fd/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/katushka_okuma_ceymar_xt_cxt40fd/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/katushka_okuma_epixor_xt_epxt30/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/katushka_okuma_epixor_xt_epxt30/
+Redirect 301 /catalog/katushki_pletenye_shnury/katushki_okuma/katushka_okuma_epixor_xt_epxt40/ https://crazy-fish.biz/catalog/katushki/katushki_okuma/katushka_okuma_epixor_xt_epxt40/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.7_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.7_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_2_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.5_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.5_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.5_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.5_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.6_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.6_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.8_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.8_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.6_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.6_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.2_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.2_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m0.8_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m0.8_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.2_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_1.2_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.5_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.5_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.5_150_m_orange/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.5_150_m_orange/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.4_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.4_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.4_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.4_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.4_150_m_orange/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.4_150_m_orange/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.3_dark_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.3_dark_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.3_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.3_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.3_150_m_orange/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.3_150_m_orange/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_0.64kg/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_0.64kg/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_0.85.1kg/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_0.85.1kg/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_1.06.1kg/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_1.06.1kg/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_1.27.1kg/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletennyj_shnur_sunline_braid_5_150m_1.27.1kg/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletjonyj_shnur_sunline_siglon_pex8_light_green_150m_0.58lb/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletjonyj_shnur_sunline_siglon_pex8_light_green_150m_0.58lb/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.2_light_green/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x4_150m_0.2_light_green/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.2_150_m/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.2_150_m/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.2_150_m_orange/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_x4_0.2_150_m_orange/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_ygk_veragass_x4_0.6_200_m/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_ygk_veragass_x4_0.6_200_m/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_x8_0.3_150_m/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_x8_0.3_150_m/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x8_150m_0.4_multi_color/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletenyj_shnur_sunline_siglon_pe_x8_150m_0.4_multi_color/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletjonyj_shnur_sunline_siglon_pex8_light_green_150m_0.46lb/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletjonyj_shnur_sunline_siglon_pex8_light_green_150m_0.46lb/
+Redirect 301 /catalog/katushki_pletenye_shnury/pletenye_shnury/pletjonyj_shnur_sunline_siglon_pex8_light_green150m_0.35lb/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/pletenye_shnury/pletjonyj_shnur_sunline_siglon_pex8_light_green150m_0.35lb/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_1.250.200mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_1.250.200mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_0.60.140mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_0.60.140mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_1.50.225mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_1.50.225mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30m_0.30.100mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30m_0.30.100mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_1.750.245mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_1.750.245mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_2.00.265mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_2.00.265mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_2.50.290mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_2.50.290mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_0.80.160mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_0.80.160mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_0.310mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_30_m_0.310mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.350mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.350mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.60.140mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.60.140mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.80.160mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.80.160mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_1.00.180mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.80.160mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.350mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.350mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.380mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.380mm/
+Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.445mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.445mm/
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+
+<IfModule mod_expires.c>
+AddType application/font-woff2 .woff2
+ExpiresActive On
+ExpiresDefault "access 60 days"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/ico "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType application/x-javascript "access plus 1 year"
+ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>

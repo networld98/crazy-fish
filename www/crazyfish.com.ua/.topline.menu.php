@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Бесплатная доставка", 
+		"/delivery/", 
+		Array(), 
+		Array("ico"=>"temp"), 
+		"" 
+	),
+	Array(
+		"О нас", 
+		"/company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Скидки", 
+		"/skidki/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Грамоты", 
+		"/company/licenses/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Блог", 
+		"https://bolshe.crazy-fish.biz", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/company/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
