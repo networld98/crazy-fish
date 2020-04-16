@@ -1,0 +1,16 @@
+# common, PHPStorm
+.DS_Store
+**/.idea
+Thumbs.db
+
+# ignore everything
+/
+
+# exclude bitrix
+/www/crazyfish.com.ua/bitrix
+/www/crazyfish.com.ua/upload
+
+# settings
+!/.gitignore
+
+
