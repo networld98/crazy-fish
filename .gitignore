@@ -12,5 +12,7 @@ Thumbs.db
 
 # settings
 !/.gitignore
-
+!/www/crazyfish.com.ua/bitrix/.default
+!/www/crazyfish.com.ua/bitrix/market2_ru_custom
+!/www/crazyfish.com.ua/bitrix/market2_v1_custom
 
