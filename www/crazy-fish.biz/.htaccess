@@ -172,6 +172,10 @@ Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunli
 Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.380mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.380mm/
 Redirect 301 /catalog/katushki_pletenye_shnury/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.445mm/ https://crazy-fish.biz/catalog/pletenye_shnury_fljuorokarbon/fljuorokarbon/fljuorokarbon_sunline_siglon_fc_50_m_0.445mm/
 
+Redirect 301 /catalog/spinningi_dlya_tvichinga/ /catalog/tvich/spinning_tvich/
+Redirect 301 /catalog/spinningi_dlya_dzhiga/ /catalog/jig/spinning_jig/
+Redirect 301 /catalog/spinningi_dlya_mikrodzhiga/ /catalog/mikrojig/spinning_mikrojig/
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteCond %{REQUEST_FILENAME} !-d
