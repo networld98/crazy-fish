@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("description", "Лучшие снасти на форель от Crazy Fish. Реалистичные приманки для успешной рыбалки - Официальный производитель ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Купить снасти для ловли фолели от Crazy Fish | Официальный сайт производителя - Россия, Москва");
+$APPLICATION->SetTitle("Купить снасти и оснастку для ловли фолели от Crazy Fish | Официальный сайт производителя - Россия, Москва");
 ?><h1>Снасти и приманки для фолели</h1>
 <?
 $APPLICATION->IncludeComponent(

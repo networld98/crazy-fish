@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Лучшие снасти на форель от Crazy Fish - это поклевка с первого заброса! Снасти и приманки на окуня, щуку, судака и других хищников. Официальный интернет-магазин ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Катушки для форели от Crazy Fish | Официальный интернет-магазин России - цены, отзывы");
+$APPLICATION->SetPageProperty("description", "Лучшие катушки и шпули на форель от Daiwa (Дайва), Okuma (Окума) - поклевка с первого заброса! Официальный интернет-магазин Crazy Fish ✈ Быстрая отгрузка \$ Лучшие цены");
+$APPLICATION->SetTitle("Купить катушки и шпули для форели от Crazy Fish - Daiwa (Дайва), Okuma (Окума) | Официальный интернет-магазин России - цены, отзывы");
 ?><h1>Катушки для форели</h1>
 <?
 $APPLICATION->IncludeComponent(

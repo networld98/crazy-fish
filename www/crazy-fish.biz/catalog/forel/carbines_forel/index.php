@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Лучшие снасти на форель от Crazy Fish - это поклевка с первого заброса! Снасти и приманки на окуня, щуку, судака и других хищников. Официальный интернет-магазин ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Карабины для форели от Crazy Fish | Официальный интернет-магазин России - цены, отзывы");
+$APPLICATION->SetPageProperty("description", "Лучшие карабины на форель от украинского производителя Crazy Fish! Купить на официальном интернет-магазине ✈ Быстрая отгрузка \$ Лучшие цены");
+$APPLICATION->SetTitle("Купить карабины, вертлюг, соединительные кольца для форели от Crazy Fish | Цены, отзывы");
 ?><h1>Карабины для форели</h1>
 <?
 $APPLICATION->IncludeComponent(

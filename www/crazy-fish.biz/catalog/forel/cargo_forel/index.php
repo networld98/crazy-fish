@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Лучшие снасти на форель от Crazy Fish - это поклевка с первого заброса! Снасти и приманки на окуня, щуку, судака и других хищников. Официальный интернет-магазин ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Груза для форели от Crazy Fish | Официальный интернет-магазин России - цены, отзывы");
+$APPLICATION->SetPageProperty("description", "Лучшие вольфрамовые чебурашки и груза на форель от Crazy Fish - поклевка с первого заброса! Официальный интернет-магазин ✈ Быстрая отгрузка \$ Бюджетные цены");
+$APPLICATION->SetTitle("Груза для форели от Crazy Fish - вольфрамовая чебурашка на форель | Цены, отзывы");
 ?><h1>Груза для форели</h1>
 <?
 $APPLICATION->IncludeComponent(

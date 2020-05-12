@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Наноджиг с Crazy Fish - это поклевка с первого заброса! Снасти и приманки на окуня, щуку, судака и других хищников. Официальный интернет-магазин ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Катушки для наноджига от Crazy Fish | Официальный интернет-магазин России - цены, отзывы");
+$APPLICATION->SetPageProperty("description", "Наноджиг катушки от Okuma (Окума), Daiwa (Дайва) недорого в России!Официальный интернет-магазин Crazy Fish ✈ Быстрая отправка по России \$ Лучшие цены");
+$APPLICATION->SetTitle("Купить катушки и шпули для наноджига от Okuma (Окума), Daiwa (Дайва) | Лучшие цены, отзывы");
 ?><h1>Катушки для наноджига</h1>
 <?
 $APPLICATION->IncludeComponent(

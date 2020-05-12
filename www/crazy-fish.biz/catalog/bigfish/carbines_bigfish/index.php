@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Биг Фишинг с Crazy Fish: серьезная охота на трофей! Снасти на биг фиш - резина на окуня, щуку, судака и других хищников. Все для успешной рыбалки ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Карабины для бигфиша от Crazy Fish | Официальный интернет-магазин России - цены, отзывы");
+$APPLICATION->SetPageProperty("description", "Биг Фишинг с Crazy Fish: серьезная охота на трофей! Карабины, поводки с вертлюгом для бигфиша. Все для успешной рыбалки ✈ Быстрая отгрузка \$ Лучшие цены");
+$APPLICATION->SetTitle("Карабины, поводки с вертлюгом для бигфиша от Crazy Fish | Россия - цены, отзывы");
 ?><h1>Карабины для бигфиша</h1>
 <?
 $APPLICATION->IncludeComponent(

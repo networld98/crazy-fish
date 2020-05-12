@@ -1,7 +1,7 @@
 <div class="jcarousel-row">
     <div class="menu">
         <a value="skidki" class="bxr-bestsellers-first bxr-bestsellers-group bxr-color-hover best-active"><div>Товары со скидкой</div></a>
-        <a value="contactless" class="bxr-bestsellers-group bxr-color-hover"><div>Бесконтактная доставка</div></a>
+<!--        <a value="contactless" class="bxr-bestsellers-group bxr-color-hover"><div>Бесконтактная доставка</div></a>-->
         <a value="new" class="bxr-bestsellers-group bxr-color-hover"><div>Новые поступления</div></a>
         <a value="lider" class="bxr-bestsellers-group bxr-color-hover"><div>Лидеры продаж</div></a>
         <div class="clearfix"></div>
@@ -28,6 +28,7 @@
                     "BXREADY_ELEMENT_ADDCLASS_SMALL" => "",
                     "BXREADY_ELEMENT_ADDCLASS_STANDART" => "",
                     "BXREADY_ELEMENT_DRAW_BIG" => "ecommerce.m2.big.v1",
+                    "BXREADY_ELEMENT_DRAW_LISTPAGE" => "ecommerce.m2.v1",
                     "BXREADY_ELEMENT_DRAW_SMALL" => "ecommerce.m2.small.v1",
                     "BXREADY_ELEMENT_DRAW_STANDART" => "ecommerce.m2.v1",
                     "BXREADY_ELEMENT_EXT_PARAMS_BIG" => "arrExtParams",
@@ -219,6 +220,7 @@
                     "BXREADY_ELEMENT_ADDCLASS_SMALL" => "",
                     "BXREADY_ELEMENT_ADDCLASS_STANDART" => "",
                     "BXREADY_ELEMENT_DRAW_BIG" => "ecommerce.m2.big.v1",
+                    "BXREADY_ELEMENT_DRAW_LISTPAGE" => "ecommerce.m2.v1",
                     "BXREADY_ELEMENT_DRAW_SMALL" => "ecommerce.m2.small.v1",
                     "BXREADY_ELEMENT_DRAW_STANDART" => "ecommerce.m2.v1",
                     "BXREADY_ELEMENT_EXT_PARAMS_BIG" => "arrExtParams",
@@ -499,8 +501,8 @@
                 )
             );?>
         </div>
-        <div class="best-blocks best-block-contactless">
-            <<?  $APPLICATION->IncludeComponent(
+        <?/*<div class="best-blocks best-block-contactless">
+            <?  $APPLICATION->IncludeComponent(
                 "bxready.market2:catalog.section",
                 "custom",
                 array(
@@ -672,7 +674,7 @@
                 false
             );?>
             <a href="/catalog/contactless/" class="news-all-video news-all-contactless">Все товары с бесконтактной доставкой</a>
-        </div>
+        </div>*/?>
     </div>
 </div>
 <script>

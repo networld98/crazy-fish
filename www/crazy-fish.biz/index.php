@@ -102,7 +102,7 @@ $APPLICATION->SetTitle("Силиконовые приманки, спиннин�
             );?>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-3 hidden-sm hidden-xs no-padding-left main-right-slider">
-            <a href="/catalog/spinningi_crazy_fish/spinning_arion/"><div style="height: 100%; width: 100%;background-image:url(/upload/banners/banner.png);background-position: center;background-size: cover;"></div></a>
+            <a href="/catalog/voblery/"><div style="height: 100%; width: 100%;background-image:url(/upload/banners/StrikePro.png);background-position: center;background-size: cover;"></div></a>
         </div>
     </div>
 

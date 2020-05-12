@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Твичинг с Crazy Fish - это поклевка с первого заброса! Снасти и приманки на окуня, щуку, судака и других хищников. Официальный интернет-магазин ✈ Быстрая отгрузка \$ Лучшие цены");
-$APPLICATION->SetTitle("Катушки для твича от Crazy Fish | Официальный интернет-магазин России - цены, отзывы");
+$APPLICATION->SetPageProperty("description", "Твичинг с катушками Daiwa (Дайва), Okuma (Окума) на сайте Crazy Fish. Купить продукцию по выгодной стоимости - Лучшее предложение! Официальный интернет-магазин ✈ Быстрая отгрузка \$ Лучшие цены");
+$APPLICATION->SetTitle("Катушки для твича (твичинга) Daiwa (Дайва), Okuma (Окума) | Цены, отзывы");
 ?><h1>Катушки для твича</h1>
  <?$APPLICATION->IncludeComponent(
 	"bxready.market2:main.include",
