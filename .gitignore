@@ -7,14 +7,15 @@ Thumbs.db
 /
 
 # exclude bitrix
-/www/crazyfish.com.ua/bitrix
-/www/crazyfish.com.ua/upload
+/crazyfish.com.ua/bitrix/*
+/crazyfish.com.ua/upload/*
 
 # settings
 !/.gitignore
-!/www/crazyfish.com.ua/bitrix/tools
-!/www/crazyfish.com.ua/bitrix/js
-!/www/crazyfish.com.ua/bitrix/templates/.default
-!/www/crazyfish.com.ua/bitrix/templates/market2_ru_custom
-!/www/crazyfish.com.ua/bitrix/templates/market2_v1_custom
+!/crazyfish.com.ua/bitrix/tools/
+!/crazyfish.com.ua/bitrix/js/
+!/crazyfish.com.ua/bitrix/php_interface/
+!/crazyfish.com.ua/bitrix/templates/.default/
+!/crazyfish.com.ua/bitrix/templates/market2_ru_custom/
+!/crazyfish.com.ua/bitrix/templates/market2_v1_custom/
 
