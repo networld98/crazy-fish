@@ -386,6 +386,7 @@
                 ),
                 false
             );?>
+            <a href="/novinki/" class="news-all-video">Все новые поступления</a>
         </div>
         <div class="best-blocks best-block-lider">
             <?$APPLICATION->IncludeComponent(
