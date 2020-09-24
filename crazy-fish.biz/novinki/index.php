@@ -72,7 +72,7 @@ $APPLICATION->IncludeComponent(
 		"COMPATIBLE_MODE" => "Y",
 		"COMPONENT_TEMPLATE" => "custom",
 		"CONVERT_CURRENCY" => "N",
-        "CUSTOM_FILTER" => "{\"CLASS_ID\":\"CondGroup\",\"DATA\":{\"All\":\"OR\",\"True\":\"True\"},\"CHILDREN\":{\"12\":{\"CLASS_ID\":\"CondIBProp:44:413\",\"DATA\":{\"logic\":\"Equal\",\"value\":363}}}}",
+		"CUSTOM_FILTER" => "{\"CLASS_ID\":\"CondGroup\",\"DATA\":{\"All\":\"OR\",\"True\":\"True\"},\"CHILDREN\":{\"12\":{\"CLASS_ID\":\"CondIBProp:44:413\",\"DATA\":{\"logic\":\"Equal\",\"value\":363}}}}",
 		"DETAIL_URL" => "",
 		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -132,7 +132,7 @@ $APPLICATION->IncludeComponent(
 		"RCM_PROD_ID" => $_REQUEST["PRODUCT_ID"],
 		"RCM_TYPE" => "personal",
 		"SECTION_CODE" => "",
-		"SECTION_ID" => "338",
+		"SECTION_ID" => "",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
 		"SECTION_USER_FIELDS" => array(
