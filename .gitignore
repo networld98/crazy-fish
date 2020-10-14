@@ -8,14 +8,16 @@ Thumbs.db
 
 # exclude bitrix
 /crazyfish.com.ua/bitrix/*
-/crazyfish.com.ua/upload/*
+/crazyfish.com.ua/upload
+
+!/crazyfish.com.ua/bitrix
+/crazyfish.com.ua/bitrix/*
+!/crazyfish.com.ua/bitrix/tools/*
 
 # settings
 !/.gitignore
-!/crazyfish.com.ua/bitrix/tools/
-!/crazyfish.com.ua/bitrix/js/
-!/crazyfish.com.ua/bitrix/php_interface/
+
+!/crazyfish.com.ua/bitrix/js
 !/crazyfish.com.ua/bitrix/templates/.default/
 !/crazyfish.com.ua/bitrix/templates/market2_ru_custom/
 !/crazyfish.com.ua/bitrix/templates/market2_v1_custom/
-
